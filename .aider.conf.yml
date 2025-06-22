@@ -1,0 +1,9 @@
+model: o4-mini
+
+test-cmd: uv run pytest
+
+## Git workflow is that I'll review and commit - I don't want aider to commit on its own, or attribute changes to itself
+auto-commits: false
+dirty-commits: false ## Enable/disable commits when repo is found dirty (default: True)
+attribute-author: false ## Attribute aider code changes in the git author name (default: True)
+attribute-committer: false ## Attribute aider commits in the git committer name (default: True)
